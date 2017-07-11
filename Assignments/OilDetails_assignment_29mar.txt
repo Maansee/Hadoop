@@ -1,0 +1,47 @@
+Oil company:
+
+1. Details of distributor who has been alloted max oil in a month:
+
+Step 1:  Start
+
+step 2: initializes all required var columns in db like distributorID, distributorName, oilAlloted/month, oilAllotmentDate, OilSold/month
+
+step 3: collect all the information and store it at required fields.
+
+step 4: from the data collected check which customer has been alloted the maximum oil. Also, check whether they had the max sales 
+	previously or not (assuming as they had max sales they were alloted more oil - this may or may not be true always)
+
+step 5: store the required details in descending order with the distributor name and id who has been alloted max. oil . The loop continues until all data is fetched.
+
+step 6: stop
+
+2. Details of distributor who sold max. oil in a month
+
+Step 1:  Start
+
+step 2: initializes all required var columns in db like distributorID, distributorName, oilAlloted/month, oilAllotmentDate, OilSold/month
+
+step 3: collect all the information and store it at required fields.
+
+step 4: from the data collected check which customer has sold maximum oil and how much oil was alloted to him. Also, how much percent of oil has he sold in the month. 
+	(We can use this and also compare with previous month details and compare as required like in a particular month sales can be higher than the rest)
+
+step 5: store the required details in descending order with the distributor name and id who has has sold maximum oil . The loop continues until all data is fetched.
+
+step 6: stop
+
+3. Details of customer who sold 50% of oil alloted
+
+Step 1:  Start
+
+step 2: initializes all required var columns in db like distributorID, distributorName, oilAlloted/month, oilAllotmentDate, OilSold/month, 50%OilAlloted
+
+step 3: collect all the information and store it at required fields.
+
+step 4: from the data collected check which customer has sold maximum oil and how much oil was alloted to him.
+
+step 5: Compare the oil alloted and the oil sold during the particular month. Here, we will analyze if the oil sold has crossed 50% mark or not. If it has, using count will increase.
+	
+step 5: store the required details in descending order with the distributor name and id who has has sold  50% oil. The loop continues until all data is fetched.
+
+step 6: stop

@@ -1,0 +1,75 @@
+1. Operator is a symbol which tells the compiler to perform a specific arithmetic/mathemaatic and logical operations.
+They perform the logical/arithmetic manipulation on a set of values.Operands are values on which operators perform some manipulation/calculation.
+Types of operators:
+1.Arithmetic: They are used in mathematical expressions in the same way that they are used in algebra.
++ -> addition, - -> subtraction, * -> multiplication, / -> division and % -> modulus ir. remainder.
+
+2. Unary: postfix and prefix ie x++ or ++x, --x or x--
+
+3.Relational: Comparision operator ie. >,<,=,>=, etc
+
+4.Logical: Includes logical AND (&&)and logical OR(||)
+
+5.Assignment operator: Used to form assignment expressions which assign value of an expression to an identifier. Eg:=, += ,-= ,*=,etc
+
+6.Conditional operator: It is also known as the ternary operator. This operator consists of three operands and is used to evaluate Boolean expressions.
+Syntax: variable x = (expression) ? value if true : value if false
+
+
+
+2. Conditional constructs are used for making decision which block of code is needed to be executed.
+Conditional constructs is used to transfer execution control to the correct path based on comparison result.
+The conditional constructs determine runtime that which statements need to be executed. 
+It uses comparison result for determining correct path of execution. There are mainly two types: if-else and switch case.
+
+If -else: The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed.
+There are various types of if statement in java.
+
+    -->if statement
+    -->if-else statement
+    -->nested if statement
+    -->if-else-if ladder
+
+
+Switch-case: The Java switch statement executes one statement from multiple conditions. It is like if-else-if ladder statement.
+The java switch statement is fall-through. It means it executes all statement after first match if break statement is not used with switch cases.
+
+
+3.Differences:
+1. if-else can be used for a range of values but switch-case is valid only for cases where we have a specific set of outputs
+2. switch-case only accepts integers and characters, not fractional values, if-else can handle both.
+3. In case of code readability, switch case is better than if-else, but this mostly depends on the programmer, how they code.
+4. if-else ensures only one case is executed but is switch case, we explicitly need to break the flow of program using statement break
+
+
+
+4. A loop statement allows us to execute a statement or group of statements multiple times .
+In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.
+Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.
+a. A while loop statement in Java programming language repeatedly executes a target statement as long as a given condition is true.
+	while(Boolean_expression) {
+   // Statements
+}
+
+b. A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+	do {
+   // Statements
+}while(Boolean_expression);
+
+
+c. A for loop is a repetition control structure that allows you to efficiently write a loop that needs to be executed a specific number of times.
+	for(initialization; Boolean_expression; update) {
+   // Statements
+}
+The initialization step is executed first, and only once.Next, the Boolean expression is evaluated. If it is true, the body of the loop is executed. 
+If it is false, the body of the loop will not be executed and control jumps to the next statement past the for loop.
+fter the body of the for loop gets executed, the control jumps back up to the update statement. This statement allows you to update any loop control variables.
+
+
+
+5. The difference is in when the condition gets evaluated. 
+In a do..while loop, the condition is not evaluated until the end of each loop. That means that a do..while loop will always run at least once. 
+In a while loop, the condition is evaluated at the start
+
+
+

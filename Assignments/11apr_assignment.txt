@@ -1,0 +1,53 @@
+1. Java Generic methods and generic classes enable programmers to specify, with a single method declaration, 
+a set of related methods, or with a single class declaration, a set of related types, respectively.
+Generics is a technique that enriches your programs in the following ways: It helps you to maximize code reuse, type safety, and performance. 
+A generic class declaration looks like a non-generic class declaration, except that the class name is followed by a type parameter section.
+As with generic methods, the type parameter section of a generic class can have one or more type parameters separated by commas. These classes are known as parameterized classes or parameterized types because they accept one or more parameters.
+
+
+2. Following are its benefits:
+1)Type-safety : We can hold only a single type of objects in generics. It doesn’t allow to store other objects.
+2)Type casting is not required: There is no need to typecast the object.
+3)Compile-Time Checking: It is checked at compile time so problem will not occur at runtime. The good programming strategy says it is far better to handle the problem at compile time than runtime.
+
+
+3.The most common example is for collections such as List, Dictionary, etc. Anything which can be included as under collection.
+
+
+4.Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.
+The HashSet class extends AbstractSet class which implements Set interface. The Set interface inherits Collection and Iterable interfaces in hierarchical order.
+Syntax: 
+HashSet<String> set=new HashSet<String>();  
+
+
+5.Difference:
+1) List is an ordered collection it maintains the insertion order whereas Set is an unordered collection, it doesn’t maintain any order.
+2) List allows duplicates while Set doesn’t allow duplicate elements. All the elements of a Set should be unique if you try to insert the duplicate element in Set it would replace the existing value.
+3) List implementations: ArrayList, LinkedList etc. and Set implementations: HashSet, LinkedHashSet, TreeSet etc.
+4) List allows any number of null values. Set can have only a single null value at most.
+
+
+6.Characteristics:
+-->HashSet doesn’t maintain any order, the elements would be returned in any random order.
+-->HashSet doesn’t allow duplicates. If you try to add a duplicate element in HashSet, the old value would be overwritten.
+-->HashSet allows null values however if you insert more than one null value it would still return only one null value.
+-->HashSet is non-synchronized.
+-->The iterator returned by this class is fail-fast which means iterator would throw ConcurrentModificationException if HashSet has been modified after creation of iterator, by any means except iterator’s own remove method.
+
+
+7.Advantage of Hash Set:
+-->HashSet object can be assigned explicitly with initial capacity and load factor. The capacity gives the existing storage capability and the load factor gives increment rate of 
+providing additional capacity when the existing capacity is exhausted.
+--> it operates in constant time, as opposed to the O(log N) time for the Set class.
+
+
+
+8. Since, a hashset is a collection of collection we can use it for purpose like an addressbook, employee details etc. We may also be able to use it to store details of all items in a supermarket.
+
+
+
+
+
+
+
+

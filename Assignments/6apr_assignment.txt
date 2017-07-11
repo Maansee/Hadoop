@@ -1,0 +1,82 @@
+1.Constructors are special class functions which performs initialization of every object.Java constructor is invoked at the time of object creation. It constructs the values i.e. provides data for the object that is why it is known as constructor. 
+  
+It is of 2 types: a. Default constructor (no-arg constructor): It has no parameter. provides the default values to the object like 0, null etc. depending on the type. 
+			Syntax: ClassName(){}
+		  b. Parameterized constructor: A constructor that have parameters is known as parameterized constructor. Parameterized constructor is used to provide different values to the distinct objects. 
+		        Syntax: ClassName(parameters){}
+
+2. Constructors are needed to initialize the objects when they are created.It is the means of creating an instance of your class by creating an object in memory and returning a reference to it. 
+   Something that should happen in the constructor is that the object is in a proper initial state for the subsequent operations on the object to make sense.
+
+3. Parameterized constructor: A constructor that has parameters is known as parameterized constructor. Parameterized constructor is used to provide different values to the distinct objects. 
+		        Syntax: ClassName(parameters){}. Parameters can be like (int a)
+
+4. Rules for Constructor: 
+It has two rules: --> Constructor name must be same as its class name
+		    --> Constructor must have no explicit return type
+
+5. In Java, constructor of base class with no argument gets automatically called in derived class constructor.But, if we want to call parameterized contructor of base class, then we can call it using super().  
+   The point to note is base class comstructor call must be the first line in derived class constructor.
+-->super can be used to refer immediate parent class instance variable.
+-->super can be used to invoke immediate parent class method.
+-->super() can be used to invoke immediate parent class constructor.
+
+6. Consider this eg.:
+public class ConstructorEx {
+
+   class Parent // base class or super class
+{
+  Parent() {
+    System.out.println("Base Class Constructor Called ");
+  }
+}
+ 
+static class Child extends Parent //subclass
+{
+  Child() {
+    System.out.println("Derived Class Constructor Called ");
+  }
+}
+    
+    public static void main(String[] args) {
+        Child c = new Child();
+    }
+    
+}
+
+Output:
+Base Class Constructor Called 
+Derived Class Constructor Called 
+
+Now here, when we created the object of child class using new keyword, its constructor is called, ie In a class hierarchy, constructors complete their execution in order of derivation, from superclass to subclass. 
+Thus, first the Parent class constructor is called, and after that the child class constructor is called. 
+Because the child class inherits from the parent class, both the perent class and child class constructors will be called when a child class object is created.
+
+7.Function overriding, in object oriented programming, is a language feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its superclasses or parent classes.
+The benefit of overriding is: ability to define a behavior that's specific to the subclass type, which means a subclass can implement a parent class method based on its requirement.
+
+8. If a class has multiple methods having same name but different in parameters, it is known as Function Overloading. It increases the readability of the program.
+There are two ways to overload the method in java:
+    -->By changing number of arguments
+    -->By changing the data type
+
+
+9. Inheritance provids a  mechanism that allows a class to inherit the property of another class. When a Class "extends" another class, it inherits all non-private members including fields and methods. 
+Inheritance in Java can be best understood in terms of Parent and Child relationship, also known as Super class(Parent) and Sub class(child) in Java language.
+Inheritance defines is-a relationship between a Super class and its Sub class. extends and implements keywords are used to describe inheritance in Java.
+The derived class inherits all the members and methods that are declared as public or protected. If declared as private it can not be inherited by the derived classes. The private members can be accessed only in its own class.
+
+10. Using the extends keyword. The extends keyword is specified after the class name and before another class name. The class name before extends identifies the child and the class name after extends identifies the parent. 
+It's impossible to specify multiple class names after extends because Java doesn't support class-based multiple inheritance.
+
+11. Interface is a 100% abstract class. It contains only constants and method signatures. In other words it is a reference type similar to class. An interface can’t be instantiated. It can be implemented by a class or extended by another interface.
+Interfaces provide an alternative to multiple inheritance. Java programming language does not support multiple inheritance. But interfaces provide a good solution. Any class can implement a particular interface and importantly the interfaces are not a part of class hierarchy. 
+Interfaces use the "implements" keyword.
+A class that implements an interface must provide implementation to all the methods that are declared in the interface.
+Interfaces can be used as reference type for the object of an implementing class.
+An interface can be extended by another interface.
+
+
+
+
+			

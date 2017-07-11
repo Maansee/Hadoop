@@ -1,0 +1,96 @@
+Transactions for E-commerce Website:
+
+Here, I have assumed that the data being analyzed is for a specified time-period like a week or a month
+
+1. Total sales b/w 25 dec and 1 jan
+
+Step 1: Start
+
+step 2: initializes all required var like customer details, count, product info, date, etc
+
+step 3: collect all the information and store it at required fields.
+
+step 4: check table info and analyze on which day sales were highest, which product was sold the most, which customer shopped the most/least, etc
+
+step 5: stop
+
+2. age of customer who spent max.
+
+Step 1:  Start
+
+step 2: initializes all required var like customer details, count, product info, date, age-group, time-period etc
+
+step 3: collect all the information and store it at required fields.
+
+step 4: check the table info and find which customer shopped the most and what was the maximum amount spent. Here total amount spent of all customers should be compared 
+	in a specified time period table should be present and from that table we should sort the customers who spent the maximum
+
+step 5: store the required details (and increase count as required)
+
+step 6: stop
+
+3. country of customer who spent max.
+
+Step 1:  Start
+
+step 2: initializes all required var like customer details, count, product info, date, age-group, time-period etc
+
+step 3: collect all the information and store it at required fields.
+
+step 4: check the table info and find which customer shopped the most and what was the maximum amount spent. Here total amount spent of all customers should be compared 
+	in a specified time period table should be present and from that table we should sort the customers who spent the maximum
+
+step 5: store the required details especially the country from which he/she belongs (and increase count as required)
+
+step 6: stop
+
+4. profession of customer
+
+Step 1:  Start
+
+step 2: initializes all required var like customer details, count, product info, date, age-group, time-period, country etc
+
+step 3: collect all the information and store it at respective fields.
+
+step 4: check the table info and find which customer shopped the most and what was the maximum amount spent. Here total amount spent of all customers should be compared 
+	in a specified time period table should be present and from that table we should sort the customers who spent the maximum
+
+step5: store the required details as the customer name, id, profession etc (and increase count as required)
+
+step 6: stop
+
+5. Total sales made by customer who has income > 1lpa
+
+Step 1:  Start
+
+step 2: initializes all required var like customer details, count, product info, date, age-group, income, country etc
+
+step 3: collect all the information and store it at required fields.
+
+step 4: check the table info and find which customer has income more than 1lpa and sort them aside.
+
+step 5: find what all products are common/ uncommon between the customers with > 1lpa who have shopped at the website
+
+step 6: store the required details (and increase count as required)
+
+step 7: stop
+
+6. age group of customer:
+
+Step 1:  Start
+
+step 2: initializes all required var like customer details, count, product info, date, age-group, time-period etc
+
+step 3: collect all the information and store it at required fields. Here age-group will be 18-25, 25-40, 40-60 and 60+
+
+step 4: check the table info and find which customer shopped what and from which age-group
+
+step 5: Check which age -group made the maximum sales and also find common/uncommon products among the age-group
+
+step 6: store the required details and find that age group which had maximum sales (and increase count as required)
+
+step 7: stop
+
+
+
+
